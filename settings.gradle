@@ -1,0 +1,8 @@
+rootProject.name = 'tema2_proiect'
+include 'ShowUser'
+include 'ShowServer'
+include 'ShowServer'
+include 'ShowNetworking'
+include 'ChatServices'
+include 'ShowServices'
+

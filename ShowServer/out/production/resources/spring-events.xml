@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+
+    <util:properties id="jdbcProps1">
+        <prop key="jdbc.driver">com.mysql.jdbc.Driver</prop>
+        <prop key="jdbc.url">jdbc:mysql://localhost/Entertainment?useSSL=false</prop>
+        <prop key="jdbc.user">root</prop>
+        <prop key="jdbc.pass">!@#$</prop>
+    </util:properties>
+
+    <util:properties id="jdbcProps" location="classpath:database.properties"/>
+
+    <bean id="repoUser"
+        class="repository.RepoUserDB">
+    </bean>
+
+    <bean id="repoShow"
+          class="repository.RepoShowDB">
+    </bean>
+
+    <bean id="repoLineUp"
+          class="repository.RepoLineUpDB">
+    </bean>
+
+    <bean id="repoArtist"
+          class="repository.RepoArtistDB">
+    </bean>
+
+    <bean id="repoTicket"
+          class="repository.RepoTicketDB">
+    </bean>
+
+    <bean id="service"
+          class="service.Service">
+        <constructor-arg ref="repoUser"/>
+        <constructor-arg ref="repoShow"/>
+        <constructor-arg ref="repoTicket"/>
+        <constructor-arg ref="repoArtist"/>
+        <constructor-arg ref="repoLineUp"/>
+    </bean>
+
+    <!--for autowired at the repositories-->
+    <bean id="connFactory"
+          class="rest.utils.ConnectionFactory">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+
+</beans>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatServices/ChatServices.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatServices/ChatServices.iml" group="ChatServices" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ShowNetworking/ShowNetworking.iml" filepath="$PROJECT_DIR$/.idea/modules/ShowNetworking/ShowNetworking.iml" group="ShowNetworking" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ShowNetworking/ShowNetworking_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ShowNetworking/ShowNetworking_main.iml" group="ShowNetworking" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ShowNetworking/ShowNetworking_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ShowNetworking/ShowNetworking_test.iml" group="ShowNetworking" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ShowServer/ShowServer.iml" filepath="$PROJECT_DIR$/.idea/modules/ShowServer/ShowServer.iml" group="ShowServer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ShowServer/ShowServer_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ShowServer/ShowServer_main.iml" group="ShowServer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ShowServer/ShowServer_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ShowServer/ShowServer_test.iml" group="ShowServer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ShowServices/ShowServices.iml" filepath="$PROJECT_DIR$/.idea/modules/ShowServices/ShowServices.iml" group="ShowServices" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ShowServices/ShowServices_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ShowServices/ShowServices_main.iml" group="ShowServices" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ShowServices/ShowServices_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ShowServices/ShowServices_test.iml" group="ShowServices" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ShowUser/ShowUser.iml" filepath="$PROJECT_DIR$/.idea/modules/ShowUser/ShowUser.iml" group="ShowUser" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ShowUser/ShowUser_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ShowUser/ShowUser_main.iml" group="ShowUser" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ShowUser/ShowUser_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ShowUser/ShowUser_test.iml" group="ShowUser" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tema2_proiect.iml" filepath="$PROJECT_DIR$/.idea/modules/tema2_proiect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tema2_proiect_main.iml" filepath="$PROJECT_DIR$/.idea/modules/tema2_proiect_main.iml" group="tema2_proiect" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tema2_proiect_test.iml" filepath="$PROJECT_DIR$/.idea/modules/tema2_proiect_test.iml" group="tema2_proiect" />
+      <module fileurl="file://$PROJECT_DIR$/tema3_interfata.iml" filepath="$PROJECT_DIR$/tema3_interfata.iml" />
+    </modules>
+  </component>
+</project>

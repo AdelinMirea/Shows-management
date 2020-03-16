@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+//    id 'org.openjfx.javafxplugin' version '0.0.7'
+}
+
+group 'adelin'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':ShowServer')
+    compile project(':ShowNetworking')
+    compile project(':ShowServices')
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

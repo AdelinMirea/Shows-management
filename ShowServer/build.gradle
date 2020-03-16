@@ -1,0 +1,68 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+//        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.3.RELEASE")
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:2.0.4.RELEASE"
+    }
+}
+
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'adelin'
+version '1.0'
+
+sourceCompatibility = 1.8
+mainClassName='Application'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    
+    compile project(":ShowNetworking")
+
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.13'
+
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.8.2'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.8.2'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.4.0'
+
+    compile 'org.springframework:spring-context:5.0.4.RELEASE'
+
+    compile 'org.hibernate:hibernate-core:5.2.10.Final'
+
+    implementation "javax.xml.bind:jaxb-api:2.2.11"
+    implementation "com.sun.xml.bind:jaxb-core:2.2.11"
+    implementation "com.sun.xml.bind:jaxb-impl:2.2.11"
+    implementation "javax.activation:activation:1.1.1"
+
+    compile 'org.springframework.boot:spring-boot-starter-web:2.1.4.RELEASE'
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.1.4.RELEASE'
+
+//    compile "org.springframework.boot:spring-boot-starter-parent"
+
+//    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.4.RELEASE'
+//    compile group: 'org.springframework', name: 'spring-web', version: '5.1.6.RELEASE'
+//    testCompile('org.springframework.boot:spring-boot-starter-test')
+//    testCompile('com.jayway.jsonpath:json-path')
+
+}
+
+jar{
+    manifest{
+        attributes('Main-Class':'Application')
+    }
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}

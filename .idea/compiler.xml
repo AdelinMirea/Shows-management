@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="ChatServices_main" target="1.8" />
+      <module name="ChatServices_test" target="1.8" />
+      <module name="ShowNetworking_main" target="1.8" />
+      <module name="ShowNetworking_test" target="1.8" />
+      <module name="ShowServer_main" target="1.8" />
+      <module name="ShowServer_test" target="1.8" />
+      <module name="ShowServices_main" target="1.8" />
+      <module name="ShowServices_test" target="1.8" />
+      <module name="ShowUser_main" target="1.8" />
+      <module name="ShowUser_test" target="1.8" />
+      <module name="tema2_proiect_main" target="1.8" />
+      <module name="tema2_proiect_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
